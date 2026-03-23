@@ -1,0 +1,29 @@
+# ============================================================
+# JDA Comparison Framework - Example Configuration
+# ============================================================
+#
+# This is an EXAMPLE file showing all possible configurations.
+# Copy the lines you need to experiments_config.csv and modify them.
+#
+# ============================================================
+# PRESET MODE: Use built-in datasets
+# Available datasets: digit, coil, pie, surf
+# ============================================================
+
+dataset,src,tar,dim,lamb,iter
+digit,USPS,MNIST,100,0.1,10
+coil,COIL1,COIL2,100,0.1,10
+pie,PIE1,PIE4,100,0.1,10
+pie,PIE1,PIE5,100,0.1,10
+pie,PIE2,PIE4,100,0.1,10
+surf,webcam,dslr,100,1.0,10
+surf,amazon,webcam,100,1.0,10
+surf,dslr,webcam,100,1.0,10
+surf,Caltech10,amazon,100,1.0,10
+
+# ============================================================
+# CUSTOM MODE: Use your own .mat files
+# ============================================================
+
+# src_file,src_feat,src_label,tar_file,tar_feat,tar_label,dim,lamb,iter
+# data/my_source.mat,X,Y,data/my_target.mat,X,Y,100,0.1,10
